@@ -1,0 +1,25 @@
+<html>
+<html lang = "pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+{#    <-- tu dołączyć style -->#}
+</head>
+
+<body>
+<div class="nav-bar">
+    <nav>
+        <a href="{{ path('home') }}">Strona główna</a>
+        <a href="{{ path('calc') }}">Kalkulator</a>
+    </nav>
+</div>
+
+<div>
+    {% block body %}{% endblock %}
+</div>
+
+</body>
+</html>
+
+</html>
