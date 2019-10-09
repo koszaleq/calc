@@ -12,13 +12,16 @@ class Operatory
 
     const DZIELENIE = '/';
 
+    const PIERWIASTEK = '√';
+
     public static function pobierzOperatory(): array
     {
         return [
             self::DODAWANIE,
             self::ODEJMOWANIE,
             self::MNOZENIE,
-            self::DZIELENIE
+            self::DZIELENIE,
+            self::PIERWIASTEK
         ];
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 namespace AppBundle\Controller;
-use AppBundle\Service\Kalkulator\KalkulatorService;
+use AppBundle\Service\Kalkulator\calcService;
 use AppBundle\Service\Kalkulator\Parser\Parser;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -28,15 +28,15 @@ class CalculatorController extends Controller
                 $parser = new Parser();
                 list($liczba1, $operator, $liczba2) = $parser->parsuj($operacja);
 
-                $kalkulator = new KalkulatorService();
+                $kalkulator = new calcService();
                 $dzialanie = $kalkulator->stworzDzialanie($liczba1, $operator, $liczba2);
 
-                if($dzialanie->czyLiczbySaPoprawne()){
-                    $wynik = $dzialanie->oblicz();
+                if($dzialanie->isNumbersCorrect()){
+                    $wynik = $dzialanie->calculate();
                     $czyWyzerowac = false;
                     $poprzedniaOperacja = sprintf("%f %s %f = %f", $liczba1, $operator, $liczba2, $wynik);
                 }else{
-                    throw new \RuntimeException('Któraś z prowadzonych liczb nie jest prawidłowa');
+                    throw new \RuntimeException('Nieprawidłowa logika matematyczna!');
                 }
 
             }catch (\Throwable $exception){

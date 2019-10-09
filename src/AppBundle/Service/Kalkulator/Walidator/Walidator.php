@@ -2,7 +2,7 @@
 
 namespace AppBundle\Service\Kalkulator\Walidator;
 
-use AppBundle\Service\Kalkulator\Dzialania\DzialanieInterface;
+use AppBundle\Service\Kalkulator\Dzialania\calcInterface;
 
 class Walidator implements WalidatorInterface
 {

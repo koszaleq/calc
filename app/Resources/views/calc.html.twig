@@ -5,15 +5,15 @@
         <span style="color: red">{{ trescBledu }}</span>
     {% endif %}
 <div class="panel">
-    <form action="{{ path('calc') }}" method="POST">
+    <form action="{{ path('calc') }}" method="POST"  id="rowne">
         <label>
             <input type="text" name="operacja" id="operacja" value="{{ wynik }}" class="input">
         </label><br>
         <input type="text" placeholder="{{ poprzedniaOperacja }}" readonly class="poprzedniaOperacja"><br>
-        <input type="submit" value="Oblicz!">
+
         <div class = "wiersz">
-            <button value="*" class="ustaw-operator">*</button>
-            <button value="/" id="dziel" class="ustaw-operator">/</button>
+            <button type = "button" value="*" class="set-operator">*</button>
+            <button value="/" id="dziel" class="set-operator">/</button>
             <button value="C" id="czysc" class="wyczysc">C</button>
             <button value="X" id="bksp" class="usun-znak"><-</button>
         </div>
@@ -21,23 +21,24 @@
             <button value="7" id="7" class="liczba">7</button>
             <button value="8" id="8" class="liczba">8</button>
             <button value="9" id="9" class="liczba">9</button>
-            <button value="%" id="procent" class="ustaw-operator">%</button>
+            <button value="√" id="pierwiastkuj" class="set-operator">√</button>
         </div>
         <div class = "wiersz">
             <button value="4" id="4" class="liczba">4</button>
             <button value="5" id="5" class="liczba">5</button>
             <button value="6" id="6" class="liczba">6</button>
-            <button value="+" id="dodaj" class="ustaw-operator">+</button>
+            <button value="+" id="dodaj" class="set-operator">+</button>
         </div>
         <div class = "wiersz">
             <button value="1" id="1" class="liczba">1</button>
             <button value="2" id="2" class="liczba">2</button>
             <button value="3" id="3" class="liczba">3</button>
-            <button value="-" id="odejmij" class="ustaw-operator">-</button>
+            <button value="-" id="odejmij" class="set-operator">-</button>
         </div>
         <div class = "wiersz">
             <button value="0" id="0" class="liczba">0</button>
-            <button value="." id="przecinek" class="przecinek">.</button>
+            <button value="." id="kropka" class="kropka">.</button>
+            <input type="submit" class="button" value="=">
         </div>
     </form>
 </div>

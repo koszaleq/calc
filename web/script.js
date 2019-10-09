@@ -12,20 +12,20 @@ $(document).ready(function(){
     $(".liczba").click(function (event) {
         let wartosc = $(this).text();
 
-        dodajDoPolaOperacji(wartosc);
+        addToField(wartosc);
     });
 
-    $(".przecinek").click(function () {
+    $(".kropka").click(function () {
         let wartosc = $(this).val();
 
-        dodajDoPolaOperacji(wartosc);
+        addToField(wartosc);
     });
 
-    $(".ustaw-operator").click(function () {
+    $(".set-operator").click(function () {
         let wartosc = $(this).val();
 
         if(operator === null){
-            dodajDoPolaOperacji(wartosc)
+            addToField(wartosc)
         }
     });
 
@@ -41,7 +41,7 @@ $(document).ready(function(){
         poleOperacji.val(poleOperacji.val().slice(0, -1));
     });
 
-    function dodajDoPolaOperacji(wartosc) {
+    function addToField(wartosc) {
         let poleOperacji = $("#operacja");
 
         poleOperacji.val(poleOperacji.val() + wartosc);
@@ -50,7 +50,7 @@ $(document).ready(function(){
     function wyczyscPoleOperacji() {
         let poleOperacji = $("#operacja");
 
-        poleOperacji.val(0);
+        poleOperacji.val("");
     }
 
 

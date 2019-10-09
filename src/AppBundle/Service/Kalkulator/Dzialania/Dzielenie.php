@@ -2,7 +2,7 @@
 
 namespace AppBundle\Service\Kalkulator\Dzialania;
 
-class Dzielenie implements DzialanieInterface
+class Dzielenie implements calcInterface
 {
     private $liczba1;
 
@@ -14,12 +14,12 @@ class Dzielenie implements DzialanieInterface
         $this->liczba2 = $liczba2;
     }
 
-    public function oblicz(): float
+    public function calculate(): float
     {
-        return (float)$this->liczba1 + $this->liczba2;
+        return (float)$this->liczba1 / $this->liczba2;
     }
 
-    public function czyLiczbySaPoprawne(): bool
+    public function isNumbersCorrect(): bool
     {
         return $this->liczba2 > 0 || $this->liczba2 < 0;
     }

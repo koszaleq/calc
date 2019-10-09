@@ -2,25 +2,23 @@
 
 namespace AppBundle\Service\Kalkulator\Dzialania;
 
-class Mnozenie implements calcInterface
+class Pierwiastek implements calcInterface
 {
     private $liczba1;
 
-    private $liczba2;
 
-    public function __construct(float $liczba1, float $liczba2)
+    public function __construct(float $liczba1)
     {
         $this->liczba1 = $liczba1;
-        $this->liczba2 = $liczba2;
     }
 
     public function calculate(): float
     {
-        return (float)$this->liczba1 * $this->liczba2;
+        return (float)sqrt($this->liczba1);
     }
 
     public function isNumbersCorrect(): bool
     {
-        return true;
+        return $this->liczba1 >= 0;
     }
 }

@@ -2,7 +2,7 @@
 
 namespace AppBundle\Service\Kalkulator\Dzialania;
 
-class Odejmowanie implements DzialanieInterface
+class Odejmowanie implements calcInterface
 {
     private $liczba1;
 
@@ -14,12 +14,12 @@ class Odejmowanie implements DzialanieInterface
         $this->liczba2 = $liczba2;
     }
 
-    public function oblicz(): float
+    public function calculate(): float
     {
-        return (float)$this->liczba1 + $this->liczba2;
+        return (float)$this->liczba1 - $this->liczba2;
     }
 
-    public function czyLiczbySaPoprawne(): bool
+    public function isNumbersCorrect(): bool
     {
         return true;
     }
