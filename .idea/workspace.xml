@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e12a2c3f-5ee9-4399-bedc-0168a84c71bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Pierwiastek.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/calc.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/calc.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/main.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/main.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/CalculatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CalculatorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Dodawanie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Dodawanie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/DzialanieInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/calcInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Dzielenie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Dzielenie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Mnozenie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Mnozenie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Odejmowanie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Odejmowanie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/KalkulatorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/calcService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Stale/Operatory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Stale/Operatory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Walidator/Walidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Walidator/Walidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570601665454</updated>
       <workItem from="1570601666771" duration="2734000" />
-      <workItem from="1570605417632" duration="14971000" />
+      <workItem from="1570605417632" duration="15329000" />
     </task>
     <servers />
   </component>
