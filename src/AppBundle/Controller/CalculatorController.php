@@ -1,54 +1,56 @@
 <?php
 
-
 namespace AppBundle\Controller;
+use AppBundle\Service\Kalkulator\KalkulatorService;
+use AppBundle\Service\Kalkulator\Parser\Parser;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Validator\Constraints\Regex;
 
 class CalculatorController extends Controller
 {
     /**
-     * @Route("/kalkulator",name="calc")
+     * @Route("/",name="calc")
+     * @param Request $request
+     * @return Response
      */
-
     public function formAction(Request $request){
 
-        $value = "";
-        $form = $this->createFormBuilder()
-            ->add('Operation', TextType::class, [
-                'label'=>false,
-            'constraints'=>[
-                new Regex([
-                    'pattern' => '/^[0-9]+[0-9\/\*\-\+\.\%]+[0-9]+$/',
-                    'message' => 'Niezrozumiała składnia.'
-                ])
-            ],
-            'attr' => [
-                'class'=>'operation',
-                'id'=>'task-form',
-                'style' => 'width: 500px; height: 100px; font-size:70px; border-style: outset; border-radius: 8px; border-width: 8px; color: black'
-            ]
-        ])
-            ->add('save', SubmitType::class,[
-                'label' => 'Oblicz!',
-                'attr' => [
-//                    'class' => 'btn btn-primary',
-                    'id' => 'submitButton',
-                    'value' => 'submit',
-//                    'style' => 'width: 410px; height: 100px'
-                ]
-            ])
-            ->getForm();
+        $wynik = null;
+        $trescBledu = "";
+        $czyWyzerowac = true;
+        $poprzedniaOperacja = null;
+        $operacja = $request->request->get('operacja');
+
+        if($request->getMethod() === Request::METHOD_POST && strlen($operacja) >= 3){
+            try{
+                $parser = new Parser();
+                list($liczba1, $operator, $liczba2) = $parser->parsuj($operacja);
+
+                $kalkulator = new KalkulatorService();
+                $dzialanie = $kalkulator->stworzDzialanie($liczba1, $operator, $liczba2);
+
+                if($dzialanie->czyLiczbySaPoprawne()){
+                    $wynik = $dzialanie->oblicz();
+                    $czyWyzerowac = false;
+                    $poprzedniaOperacja = sprintf("%f %s %f = %f", $liczba1, $operator, $liczba2, $wynik);
+                }else{
+                    throw new \RuntimeException('Któraś z prowadzonych liczb nie jest prawidłowa');
+                }
+
+            }catch (\Throwable $exception){
+                $trescBledu = $exception->getMessage();
+            }
+
+        }
 
         return $this->render('calc.html.twig', [
-            'form' => $form->createView(),
-            'myValue' => $value
+            'wynik' => $wynik,
+            'czyWyzerowac' => $czyWyzerowac,
+            'poprzedniaOperacja' => $poprzedniaOperacja,
+            'trescBledu' => $trescBledu
         ]);
-
     }
 }
 
