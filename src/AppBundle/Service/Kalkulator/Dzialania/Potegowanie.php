@@ -23,6 +23,6 @@ class Potegowanie implements calcInterface
 
     public function isNumbersCorrect(): bool
     {
-        return $this->liczba1 != 0 && $this->liczba2 !=0;
+        return ($this->liczba1 !== 0 && $this->liczba2 !== 0);
     }
 }
