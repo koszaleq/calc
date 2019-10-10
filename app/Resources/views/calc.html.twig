@@ -4,6 +4,7 @@
     {% if trescBledu is defined %}
         <span style="color: red">{{ trescBledu }}</span>
     {% endif %}
+    <div class = "calcview">
 <div class="panel">
     <form action="{{ path('calc') }}" method="POST"  id="rowne">
         <label>
@@ -43,5 +44,5 @@
         </div>
     </form>
 </div>
-
+    </div>
 {% endblock %}
