@@ -1,9 +1,13 @@
 $(document).ready(function(){
     var operator = null;
 
-    // $("#operacja").keydown(function(){
-    //     console.log("zmiana");
-    // });
+    if(czyWyzerowac === 1){
+        $("#operacja").val("");
+    }
+
+    $("#operacja").keydown(function(){
+        console.log("zmiana");
+    });
 
     $(".liczba").click(function (event) {
         let wartosc = $(this).text();
@@ -26,13 +30,13 @@ $(document).ready(function(){
     });
 
     $(".wyczysc").click(function () {
-        cleanField();
+        wyczyscPoleOperacji();
         operator = null;
     });
 
     $(".usun-znak").click(function () {
-        let poleOperacji = $("#operacja");
-//            wartosc = poleOperacji.val();
+        let poleOperacji = $("#operacja"),
+            wartosc = poleOperacji.val();
 
         poleOperacji.val(poleOperacji.val().slice(0, -1));
     });
@@ -43,7 +47,7 @@ $(document).ready(function(){
         poleOperacji.val(poleOperacji.val() + wartosc);
     }
 
-    function cleanField() {
+    function wyczyscPoleOperacji() {
         let poleOperacji = $("#operacja");
 
         poleOperacji.val("");
@@ -52,12 +56,5 @@ $(document).ready(function(){
 
     $('button').click(function (event) {
         event.preventDefault(); //blokuje wywołanie formularza po kliknięciu button
-    });
-
-    $('form input').keydown(function (e) {
-        if (e.keyCode === 13) {
-            e.preventDefault();
-            return false;
-        }
     });
 });

@@ -2,7 +2,7 @@
 
 namespace AppBundle\Service\Kalkulator\Stale;
 
-class Operatory
+class Operators
 {
     const DODAWANIE = '+';
 
@@ -14,14 +14,17 @@ class Operatory
 
     const PIERWIASTEK = '√';
 
-    public static function pobierzOperatory(): array
+    const POTEGA = '^';
+
+    public static function getOperator(): array
     {
         return [
             self::DODAWANIE,
             self::ODEJMOWANIE,
             self::MNOZENIE,
             self::DZIELENIE,
-            self::PIERWIASTEK
+            self::PIERWIASTEK,
+            self::POTEGA
         ];
     }
 }

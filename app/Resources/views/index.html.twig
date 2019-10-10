@@ -1,0 +1,110 @@
+{% extends 'main.html.twig' %}
+
+{#{% block body %}#}
+{#    <div id="wrapper">#}
+{#        <div id="container">#}
+{#            <div id="welcome">#}
+{#                <h1><span>Welcome to</span> Symfony {{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION') }}</h1>#}
+{#            </div>#}
+
+{#            <div id="status">#}
+{#                <p>#}
+{#                    <svg id="icon-status" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#759E1A"/></svg>#}
+
+{#                    Your application is now ready. You can start working on it at:#}
+{#                    <code>{{ base_dir }}</code>#}
+{#                </p>#}
+{#            </div>#}
+
+{#            <div id="next">#}
+{#                <h2>What's next?</h2>#}
+{#                <p>#}
+{#                    <svg id="icon-book" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="-12.5 9 64 64" enable-background="new -12.5 9 64 64" xml:space="preserve">#}
+{#                        <path fill="#AAA" d="M6.8,40.8c2.4,0.8,4.5-0.7,4.9-2.5c0.2-1.2-0.3-2.1-1.3-3.2l-0.8-0.8c-0.4-0.5-0.6-1.3-0.2-1.9#}
+{#                            c0.4-0.5,0.9-0.8,1.8-0.5c1.3,0.4,1.9,1.3,2.9,2.2c-0.4,1.4-0.7,2.9-0.9,4.2l-0.2,1c-0.7,4-1.3,6.2-2.7,7.5#}
+{#                            c-0.3,0.3-0.7,0.5-1.3,0.6c-0.3,0-0.4-0.3-0.4-0.3c0-0.3,0.2-0.3,0.3-0.4c0.2-0.1,0.5-0.3,0.4-0.8c0-0.7-0.6-1.3-1.3-1.3#}
+{#                            c-0.6,0-1.4,0.6-1.4,1.7s1,1.9,2.4,1.8c0.8,0,2.5-0.3,4.2-2.5c2-2.5,2.5-5.4,2.9-7.4l0.5-2.8c0.3,0,0.5,0.1,0.8,0.1#}
+{#                            c2.4,0.1,3.7-1.3,3.7-2.3c0-0.6-0.3-1.2-0.9-1.2c-0.4,0-0.8,0.3-1,0.8c-0.1,0.6,0.8,1.1,0.1,1.5c-0.5,0.3-1.4,0.6-2.7,0.4l0.3-1.3#}
+{#                            c0.5-2.6,1-5.7,3.2-5.8c0.2,0,0.8,0,0.8,0.4c0,0.2,0,0.2-0.2,0.5c-0.2,0.3-0.3,0.4-0.2,0.7c0,0.7,0.5,1.1,1.2,1.1#}
+{#                            c0.9,0,1.2-1,1.2-1.4c0-1.2-1.2-1.8-2.6-1.8c-1.5,0.1-2.8,0.9-3.7,2.1c-1.1,1.3-1.8,2.9-2.3,4.5c-0.9-0.8-1.6-1.8-3.1-2.3#}
+{#                            c-1.1-0.7-2.3-0.5-3.4,0.3c-0.5,0.4-0.8,1-1,1.6c-0.4,1.5,0.4,2.9,0.8,3.4l0.9,1c0.2,0.2,0.6,0.8,0.4,1.5c-0.3,0.8-1.2,1.3-2.1,1#}
+{#                            c-0.4-0.2-1-0.5-0.9-0.9c0.1-0.2,0.2-0.3,0.3-0.5s0.1-0.3,0.1-0.3c0.2-0.6-0.1-1.4-0.7-1.6c-0.6-0.2-1.2,0-1.3,0.8#}
+{#                            C4.3,38.4,4.7,40,6.8,40.8z M46.1,20.9c0-4.2-3.2-7.5-7.1-7.5h-3.8C34.8,10.8,32.7,9,30.2,9L-2.3,9.1c-2.8,0.1-4.9,2.4-4.9,5.4#}
+{#                            L-7,58.6c0,4.8,8.1,13.9,11.6,14.1l34.7-0.1c3.9,0,7-3.4,7-7.6L46.1,20.9z M-0.3,36.4c0-8.6,6.5-15.6,14.5-15.6#}
+{#                            c8,0,14.5,7,14.5,15.6S22.1,52,14.2,52C6.1,52-0.3,45-0.3,36.4z M42.1,65.1c0,1.8-1.5,3.1-3.1,3.1H4.6c-0.7,0-3-1.8-4.5-4.4h30.4#}
+{#                            c2.8,0,5-2.4,5-5.4V17.9h3.7c1.6,0,2.9,1.4,2.9,3.1V65.1L42.1,65.1z"/>#}
+{#                    </svg>#}
+
+{#                    Read the documentation to learn#}
+{#                    <a href="https://symfony.com/doc/{{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION')[:3] }}/page_creation.html">#}
+{#                        How to create your first page in Symfony#}
+{#                    </a>#}
+{#                </p>#}
+{#            </div>#}
+
+{#        </div>#}
+{#    </div>#}
+{#{% endblock %}#}
+
+{#{% block stylesheets %}#}
+{#<style>#}
+{#    body { background: #F5F5F5; font: 18px/1.5 sans-serif; }#}
+{#    h1, h2 { line-height: 1.2; margin: 0 0 .5em; }#}
+{#    h1 { font-size: 36px; }#}
+{#    h2 { font-size: 21px; margin-bottom: 1em; }#}
+{#    p { margin: 0 0 1em 0; }#}
+{#    a { color: #0000F0; }#}
+{#    a:hover { text-decoration: none; }#}
+{#    code { background: #F5F5F5; max-width: 100px; padding: 2px 6px; word-wrap: break-word; }#}
+{#    #wrapper { background: #FFF; margin: 1em auto; max-width: 800px; width: 95%; }#}
+{#    #container { padding: 2em; }#}
+{#    #welcome, #status { margin-bottom: 2em; }#}
+{#    #welcome h1 span { display: block; font-size: 75%; }#}
+{#    #icon-status, #icon-book { float: left; height: 64px; margin-right: 1em; margin-top: -4px; width: 64px; }#}
+{#    #icon-book { display: none; }#}
+
+{#    @media (min-width: 768px) {#}
+{#        #wrapper { width: 80%; margin: 2em auto; }#}
+{#        #icon-book { display: inline-block; }#}
+{#        #status a, #next a { display: block; }#}
+
+{#        @-webkit-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }#}
+{#        @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }#}
+{#        .sf-toolbar { opacity: 0; -webkit-animation: fade-in 1s .2s forwards; animation: fade-in 1s .2s forwards;}#}
+{#    }#}
+{#</style>#}
+{#{% endblock %}#}
+{% block body %}
+    <div class = "panel" >
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas. Et malesuada fames ac turpis egestas. Dictum sit amet justo donec enim diam. Convallis tellus id interdum velit laoreet id donec ultrices. Commodo odio aenean sed adipiscing diam donec. Nisl vel pretium lectus quam id leo. Id aliquet lectus proin nibh. Vestibulum lorem sed risus ultricies tristique. Sollicitudin ac orci phasellus egestas tellus. Blandit cursus risus at ultrices mi tempus imperdiet. Velit laoreet id donec ultrices tincidunt arcu non. A condimentum vitae sapien pellentesque habitant morbi. Tincidunt vitae semper quis lectus nulla at volutpat diam ut.
+
+            Tincidunt augue interdum velit euismod in pellentesque massa placerat. Mattis rhoncus urna neque viverra justo. Et netus et malesuada fames ac turpis egestas sed tempus. Id velit ut tortor pretium viverra. A erat nam at lectus urna duis convallis. Condimentum lacinia quis vel eros donec ac odio tempor. Hac habitasse platea dictumst vestibulum. Porttitor rhoncus dolor purus non. Purus viverra accumsan in nisl. Phasellus vestibulum lorem sed risus ultricies tristique. Odio pellentesque diam volutpat commodo sed egestas egestas. Lectus magna fringilla urna porttitor rhoncus dolor purus. Laoreet non curabitur gravida arcu ac. Facilisis gravida neque convallis a cras semper auctor neque vitae. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus.
+
+            Nec ultrices dui sapien eget mi proin sed libero. Hac habitasse platea dictumst vestibulum rhoncus est. Diam maecenas ultricies mi eget. Ut diam quam nulla porttitor massa id. Donec et odio pellentesque diam volutpat commodo. At in tellus integer feugiat scelerisque. Quam pellentesque nec nam aliquam sem et tortor consequat. Enim tortor at auctor urna nunc. Viverra mauris in aliquam sem. Massa sed elementum tempus egestas sed sed risus pretium quam. Senectus et netus et malesuada fames ac. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
+
+            Lacus sed viverra tellus in. Quis imperdiet massa tincidunt nunc. Iaculis eu non diam phasellus vestibulum lorem sed. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Sit amet dictum sit amet. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Vel elit scelerisque mauris pellentesque. Sit amet cursus sit amet dictum sit amet justo donec. Non pulvinar neque laoreet suspendisse. Praesent tristique magna sit amet purus gravida quis. Sed blandit libero volutpat sed cras ornare. Habitant morbi tristique senectus et netus. Vitae elementum curabitur vitae nunc sed velit. Tristique et egestas quis ipsum suspendisse. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Ac felis donec et odio pellentesque diam volutpat.
+
+            Arcu ac tortor dignissim convallis aenean. Urna nunc id cursus metus aliquam. Scelerisque purus semper eget duis. Enim facilisis gravida neque convallis. Nunc sed augue lacus viverra vitae. Curabitur vitae nunc sed velit. Condimentum mattis pellentesque id nibh tortor id. Lacus vestibulum sed arcu non odio euismod lacinia. Placerat duis ultricies lacus sed turpis tincidunt. Integer malesuada nunc vel risus commodo viverra maecenas. Auctor augue mauris augue neque gravida. Id volutpat lacus laoreet non.
+
+            Enim nec dui nunc mattis enim. Pharetra sit amet aliquam id. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero id. Iaculis eu non diam phasellus vestibulum lorem sed risus. Urna nec tincidunt praesent semper feugiat. Leo vel fringilla est ullamcorper. Ac tortor vitae purus faucibus. Eu feugiat pretium nibh ipsum consequat. Ullamcorper malesuada proin libero nunc consequat. Sagittis eu volutpat odio facilisis mauris. Nunc mattis enim ut tellus elementum sagittis vitae et. Risus ultricies tristique nulla aliquet enim tortor. Diam quis enim lobortis scelerisque fermentum dui. Amet tellus cras adipiscing enim eu turpis egestas pretium. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula.
+
+            Amet nisl purus in mollis. Adipiscing enim eu turpis egestas pretium. In vitae turpis massa sed elementum tempus egestas sed sed. Velit laoreet id donec ultrices tincidunt arcu non. Non sodales neque sodales ut etiam sit amet nisl purus. Feugiat vivamus at augue eget arcu dictum varius duis at. Tellus integer feugiat scelerisque varius morbi. Sed sed risus pretium quam vulputate dignissim suspendisse in est. Lectus sit amet est placerat in. Porttitor leo a diam sollicitudin tempor id eu. Erat nam at lectus urna duis convallis. Maecenas accumsan lacus vel facilisis volutpat est velit. Egestas egestas fringilla phasellus faucibus. Justo laoreet sit amet cursus sit amet dictum sit. Cursus eget nunc scelerisque viverra mauris in aliquam sem.
+
+            Eu ultrices vitae auctor eu augue ut. Tincidunt vitae semper quis lectus nulla at volutpat diam. Lacus viverra vitae congue eu consequat ac felis donec et. Magna sit amet purus gravida quis blandit turpis cursus in. Pharetra magna ac placerat vestibulum lectus mauris ultrices. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Varius vel pharetra vel turpis nunc eget. Sit amet mattis vulputate enim nulla aliquet. Libero justo laoreet sit amet cursus sit. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Quis hendrerit dolor magna eget est lorem. Viverra nibh cras pulvinar mattis nunc sed blandit. Morbi enim nunc faucibus a pellentesque sit amet porttitor.
+
+            In ante metus dictum at tempor commodo ullamcorper a. Ultricies lacus sed turpis tincidunt id aliquet risus. Fermentum posuere urna nec tincidunt. Facilisis leo vel fringilla est ullamcorper eget nulla. Gravida neque convallis a cras semper auctor. Enim ut tellus elementum sagittis vitae et leo duis ut. Risus viverra adipiscing at in tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Tristique senectus et netus et malesuada fames ac. Neque viverra justo nec ultrices. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Aliquet risus feugiat in ante metus dictum at tempor commodo. Facilisis sed odio morbi quis. Risus feugiat in ante metus dictum at tempor commodo ullamcorper. Netus et malesuada fames ac turpis egestas maecenas. Dictum sit amet justo donec enim diam vulputate ut pharetra.
+
+            Feugiat in ante metus dictum at tempor commodo ullamcorper a. Congue eu consequat ac felis donec et odio pellentesque diam. Nibh praesent tristique magna sit amet purus gravida. Tempor commodo ullamcorper a lacus. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Et malesuada fames ac turpis. In mollis nunc sed id semper risus in. Rutrum quisque non tellus orci ac. Auctor elit sed vulputate mi sit amet. Vitae semper quis lectus nulla.
+
+            Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Consequat nisl vel pretium lectus quam id. Sit amet mattis vulputate enim nulla. Morbi enim nunc faucibus a pellentesque sit amet porttitor. Non consectetur a erat nam at lectus urna duis. Egestas dui id ornare arcu. Quis varius quam quisque id diam vel quam elementum. Sit amet dictum sit amet justo donec enim diam. Etiam erat velit scelerisque in. Porta non pulvinar neque laoreet. Quis imperdiet massa tincidunt nunc pulvinar sapien. Eget lorem dolor sed viverra ipsum nunc aliquet. Quis auctor elit sed vulputate mi sit amet. Lorem mollis aliquam ut porttitor leo a. Id nibh tortor id aliquet lectus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla.
+
+            Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Facilisis magna etiam tempor orci eu lobortis elementum nibh. Ultrices eros in cursus turpis. Morbi tristique senectus et netus et malesuada. Laoreet id donec ultrices tincidunt arcu non. Auctor eu augue ut lectus arcu bibendum at. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Proin fermentum leo vel orci porta non pulvinar neque laoreet. Sagittis id consectetur purus ut faucibus. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Nec nam aliquam sem et tortor consequat.
+
+            Id donec ultrices tincidunt arcu non. Diam quis enim lobortis scelerisque fermentum dui. Id consectetur purus ut faucibus. Tellus elementum sagittis vitae et. Ante metus dictum at tempor commodo ullamcorper a lacus. Ut venenatis tellus in metus vulputate eu scelerisque felis. Amet mauris commodo quis imperdiet massa tincidunt. Rhoncus aenean vel elit scelerisque. Nunc sed id semper risus in hendrerit. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Lacus laoreet non curabitur gravida arcu ac tortor dignissim.
+
+            Semper auctor neque vitae tempus. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. A erat nam at lectus. Dui sapien eget mi proin sed libero enim sed. Diam quam nulla porttitor massa id neque aliquam vestibulum morbi. Id semper risus in hendrerit gravida rutrum quisque non tellus. Ut venenatis tellus in metus vulputate eu scelerisque. Mauris vitae ultricies leo integer malesuada. Morbi quis commodo odio aenean sed. Massa vitae tortor condimentum lacinia quis vel eros. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Id leo in vitae turpis massa sed elementum. Placerat vestibulum lectus mauris ultrices.
+
+            Amet risus nullam eget felis eget. Sit amet est placerat in egestas erat imperdiet sed. Ornare arcu odio ut sem nulla pharetra diam sit amet. Tellus rutrum tellus pellentesque eu tincidunt. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Ut aliquam purus sit amet luctus venenatis lectus. Mi ipsum faucibus vitae aliquet nec. Ullamcorper eget nulla facilisi etiam dignissim diam quis. Mauris pharetra et ultrices neque ornare aenean euismod. Mattis pellentesque id nibh tortor id. Consectetur libero id faucibus nisl tincidunt eget nullam. Diam volutpat commodo sed egestas egestas. Lacus viverra vitae congue eu consequat ac felis."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+{% endblock %}

@@ -2,6 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e12a2c3f-5ee9-4399-bedc-0168a84c71bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Potegowanie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/calc.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/calc.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/main.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/main.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/CalculatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CalculatorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Parser/Parser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Parser/Parser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Stale/Operatory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Stale/Operators.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/calcService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/calcService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,8 +76,14 @@
   <component name="ProjectId" id="1RxH8F3dV9jL78p98c2xf7bIErf" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Kalkulator-Pliki-tylko-PHP" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/web/script1.js" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Resources/views" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -91,7 +108,8 @@
       <option name="presentableId" value="Default" />
       <updated>1570601665454</updated>
       <workItem from="1570601666771" duration="2734000" />
-      <workItem from="1570605417632" duration="15329000" />
+      <workItem from="1570605417632" duration="18609000" />
+      <workItem from="1570688556477" duration="16057000" />
     </task>
     <servers />
   </component>
@@ -110,5 +128,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/AppBundle/Controller/CalculatorController.php</url>
+          <line>3</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -2,16 +2,16 @@
 
 namespace AppBundle\Service\Kalkulator\Parser;
 
-use AppBundle\Service\Kalkulator\Stale\Operatory;
+use AppBundle\Service\Kalkulator\Stale\Operators;
 
 class Parser
 {
-    public function parsuj(string $ciagZnakow): array
+    public function parse(string $ciagZnakow): array
     {
-        $operator = $this->znajdzOperator($ciagZnakow);
+        $operator = $this->findOperator($ciagZnakow);
 
         if($operator === null){
-            throw new \RuntimeException('Niedozwolony operator. Dozwolone są tylko: ' . implode(' ', Operatory::pobierzOperatory()));
+            throw new \RuntimeException('Błędna składnia bądź niedozwolony operator. Dozwolone są tylko symbole: ' . implode(' ', Operators::getOperator()));
         }
 
         $liczby = explode($operator, $ciagZnakow);
@@ -30,10 +30,10 @@ class Parser
         return [$liczba1, $operator, $liczba2];
     }
 
-    private function znajdzOperator(string $ciagZnakow)
+    private function findOperator(string $ciagZnakow)
     {
         $znak = null;
-        foreach (Operatory::pobierzOperatory() as $operator){
+        foreach (Operators::getOperator() as $operator){
             if(strpos($ciagZnakow, $operator)){
                 $znak = $operator;
                 break;
