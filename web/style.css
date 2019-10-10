@@ -112,7 +112,6 @@ body {
 
 .panel {
     padding: 20 20 20;
-    text-align: center;
 }
 
 .f1 {
@@ -123,4 +122,9 @@ body {
     font-size: 20px;
     text-align: center;
     border: solid red;
+}
+
+.calcview {
+    padding: 20 20 20;
+    text-align: center;
 }
