@@ -13,7 +13,7 @@ use AppBundle\Service\Kalkulator\Stale\Operators;
 
 class calcService
 {
-    public function calculate(float $liczba1, string $operator, float $liczba2): calcInterface
+    public function calcOperator(float $liczba1, string $operator, float $liczba2): calcInterface
     {
         $dzialanie = null;
         switch ($operator){

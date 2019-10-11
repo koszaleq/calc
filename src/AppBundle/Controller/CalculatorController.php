@@ -28,7 +28,7 @@ class CalculatorController extends Controller
                 list($liczba1, $operator, $liczba2) = $parser->parse($operacja);
 
                 $kalkulator = new calcService();
-                $dzialanie = $kalkulator->calculate($liczba1, $operator, $liczba2);
+                $dzialanie = $kalkulator->calcOperator($liczba1, $operator, $liczba2);
 
                 if($dzialanie->isNumbersCorrect()){
                     $wynik = $dzialanie->calculate();
