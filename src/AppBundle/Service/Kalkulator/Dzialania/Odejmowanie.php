@@ -8,7 +8,7 @@ class Odejmowanie implements calcInterface
 
     private $liczba2;
 
-    public function __construct(int $liczba1, int $liczba2)
+    public function __construct(float $liczba1, float $liczba2)
     {
         $this->liczba1 = $liczba1;
         $this->liczba2 = $liczba2;
