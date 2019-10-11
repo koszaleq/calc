@@ -5,7 +5,6 @@ namespace AppBundle\Service\Kalkulator\Dzialania;
 class Odejmowanie implements calcInterface
 {
     private $liczba1;
-
     private $liczba2;
 
     public function __construct(float $liczba1, float $liczba2)

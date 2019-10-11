@@ -33,11 +33,12 @@ class CalculatorController extends Controller
                 if($dzialanie->isNumbersCorrect()){
                     $wynik = $dzialanie->calculate();
                     $poprzedniaOperacja = sprintf("%f %s %f = %f", $liczba1, $operator, $liczba2, $wynik);
-                }else{
+                }
+                else{
                     throw new \RuntimeException('Nieprawidłowa logika matematyczna!');
                 }
-
-            }catch (\Throwable $exception){
+            }
+            catch (\Throwable $exception){
                 $trescBledu = $exception->getMessage();
             }
 

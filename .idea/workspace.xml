@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e12a2c3f-5ee9-4399-bedc-0168a84c71bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/calc.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/calc.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/main.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/main.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/CalculatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CalculatorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/calcService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/calcService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Odejmowanie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Dzialania/Odejmowanie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Stale/Operators.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Service/Kalkulator/Stale/Operators.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +72,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Kalkulator-Pliki-tylko-PHP" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/web/script1.js" />
   </component>
   <component name="RecentsManager">
@@ -100,7 +105,8 @@
       <workItem from="1570601666771" duration="2734000" />
       <workItem from="1570605417632" duration="18609000" />
       <workItem from="1570688556477" duration="22870000" />
-      <workItem from="1570774522435" duration="7403000" />
+      <workItem from="1570774522435" duration="7879000" />
+      <workItem from="1570784590232" duration="9065000" />
     </task>
     <servers />
   </component>
@@ -119,16 +125,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/AppBundle/Controller/CalculatorController.php</url>
-          <line>3</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

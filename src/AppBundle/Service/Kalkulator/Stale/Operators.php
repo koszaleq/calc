@@ -5,15 +5,10 @@ namespace AppBundle\Service\Kalkulator\Stale;
 class Operators
 {
     const DODAWANIE = '+';
-
     const ODEJMOWANIE = '-';
-
     const MNOZENIE = '*';
-
     const DZIELENIE = '/';
-
     const PIERWIASTEK = '√';
-
     const POTEGA = '^';
 
     public static function getOperator(): array
