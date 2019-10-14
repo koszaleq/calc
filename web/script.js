@@ -1,10 +1,6 @@
 $(document).ready(function(){
     var operator = null;
 
-    // $("#operacja").keydown(function(){
-    //     console.log("zmiana");
-    // });
-
     $(".liczba").click(function (event) {
         let wartosc = $(this).text();
 
@@ -32,8 +28,6 @@ $(document).ready(function(){
 
     $(".usun-znak").click(function () {
         let poleOperacji = $("#operacja");
-//            wartosc = poleOperacji.val();
-
         poleOperacji.val(poleOperacji.val().slice(0, -1));
     });
 
